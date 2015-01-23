@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>SystemDot.Web.WebApi</id>
-    <version>1.0.0</version>
+    <version>1.0.0-beta</version>
     <title>SystemDot.Web.WebApiv</title>
     <authors>Chris Sampson,James Goodenough</authors>
     <owners>Chris Sampson,James Goodenough</owners>
-    <projectUrl>https://github.com/SystemDot/SystemDotCore</projectUrl>
+    <projectUrl>https://github.com/SystemDot/SystemDotWeb</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Miscellaneous Web api components, including dependency resolver and cache and model state manipulation</description>
     <summary>Miscellaneous Web api components, including dependency resolver and cache and model state manipulation</summary>
