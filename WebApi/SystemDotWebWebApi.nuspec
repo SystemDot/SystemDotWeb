@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SystemDot.Web.WebApi</id>
+    <version>1.0.0</version>
+    <title>SystemDot.Web.WebApiv</title>
+    <authors>Chris Sampson,James Goodenough</authors>
+    <owners>Chris Sampson,James Goodenough</owners>
+    <projectUrl>https://github.com/SystemDot/SystemDotCore</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Miscellaneous Web api components, including dependency resolver and cache and model state manipulation</description>
+    <summary>Miscellaneous Web api components, including dependency resolver and cache and model state manipulation</summary>
+    <copyright>SystemDot 2015</copyright>
+    <language>en-GB</language>
+    <tags>Asp.Net, WebApi, Web</tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.3-beta1" />
+      <dependency id="Microsoft.AspNet.WebApi.Core" version="5.2.3-beta1" />
+      <dependency id="SystemDotCore" version="3.1.2" />
+      <dependency id="SystemDotIoc" version="1.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Build\SystemDot.Web.WebApi.dll" target="lib\net\SystemDot.Web.WebApi.dll" />
+    <file src="Build\SystemDot.Web.WebApi.pdb" target="lib\net\SystemDot.Web.WebApi.pdb" />
+  </files>
+</package>
