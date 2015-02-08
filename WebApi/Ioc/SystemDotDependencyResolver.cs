@@ -5,7 +5,7 @@
     using System.Web.Http.Dependencies;
     using SystemDot.Ioc;
 
-    internal class SystemDotDependencyResolver : IDependencyResolver
+    public class SystemDotDependencyResolver : IDependencyResolver
     {
         readonly IIocContainer container;
 
