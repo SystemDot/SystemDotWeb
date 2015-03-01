@@ -10,14 +10,18 @@
     {
         public override Task OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)
         {
-            actionExecutedContext.Response.Headers.CacheControl = new CacheControlHeaderValue
+            if (actionExecutedContext.Response != null)
             {
-                NoCache = true,
-                NoStore = true,
-                MustRevalidate = true,
-                MaxAge = new TimeSpan(0, 0, 0),
-                Public = true
-            };
+                actionExecutedContext.Response.Headers.CacheControl = new CacheControlHeaderValue
+                {
+                    NoCache = true,
+                    NoStore = true,
+                    MustRevalidate = true,
+                    MaxAge = new TimeSpan(0, 0, 0),
+                    Public = true
+                };
+            }
+
             return base.OnActionExecutedAsync(actionExecutedContext, cancellationToken);
         }
     }
